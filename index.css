@@ -28,7 +28,7 @@ header {
     border: 2px solid hsl(217, 16%, 45%);
     border-radius: 8px;
     background-color:hsl(237, 49%, 15%);
-    background-image: radial-gradient(hsl(214, 43%, 35%), hsl(237, 49%, 15%));
+    background-image: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
 }
 
 .score-display{
@@ -251,7 +251,7 @@ h2{
     border: 1px solid #FFFFFF;
     border-radius: 8px;
     background-color:hsl(237, 49%, 15%);
-    background-image: radial-gradient(hsl(214, 43%, 35%), hsl(237, 49%, 15%));
+    background-image: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
     color: white;
     font-size: 16px;
     font-weight: 600;
