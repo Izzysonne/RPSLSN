@@ -135,7 +135,7 @@ let fromLocalStorage = JSON.parse(localStorage.getItem("Score"))
 
 
 if (fromLocalStorage === false){
-    playerScore.textContent = "" 
+    playerScore.textContent = 0 
 } else{
     playerScore.textContent =  fromLocalStorage 
 }
