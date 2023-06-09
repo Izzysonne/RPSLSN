@@ -139,7 +139,6 @@ playerScore.textContent =  fromLocalStorage
 playerScorePoint = fromLocalStorage
 
 function updateScoreBoard(){
-    localStorage.setItem("Score", JSON.stringify(playerScorePoint))
     if(result==="WIN"){
         playerScorePoint ++
         playerScore.textContent = playerScorePoint
@@ -159,6 +158,7 @@ function updateScoreBoard(){
            document.getElementById("win-or-lose").textContent = "TIE"
            } 
     playAgainBtn.style.display = "block"
+    localStorage.setItem("Score", JSON.stringify(playerScorePoint))
 
 }
 
