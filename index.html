@@ -57,7 +57,7 @@
             id='close-btn'>
       </div>
       <script>
-        const rulesBtn = document.getElementById("rules-btn")
+      const rulesBtn = document.getElementById("rules-btn")
 const htmlBody = document.getElementById("body");
 const mainEl = document.getElementById("main")
 const html = document.getElementById("html");
@@ -166,6 +166,7 @@ if (screenSize.matches) { // If media query matches
     determineWinnner(playerChoice, computerChoice)
     choicesContainer.style.display = "none"
     displayContainer.innerHTML = `
+        
         <div>
             <p id="text">YOU PICKED</p> 
             <button id="${playerChoice}"></button>
@@ -185,10 +186,13 @@ if (screenSize.matches) { // If media query matches
             <button id="${computerChoice}"></button>
         </div>
         `
+        setTimeout(function(){
             updateScoreBoard()
             displayContainer.style.gap = "352px"
             playAgain.style.marginTop = "-200px"
             rulesBtn.style.margin = "200px -64px auto auto"
+        }, 2500)
+            
 
     },3000)
     }
@@ -216,7 +220,10 @@ if (screenSize.matches) { // If media query matches
             <p id="text">THE HOUSE PICKED</p>
         </div>
         `
+        setTimeout(function(){
             updateScoreBoard()
+        }, 2500)
+            
 
     },3000)
    
@@ -228,8 +235,10 @@ if (screenSize.matches) { // If media query matches
 btns.forEach(btn => {
 
    btn.addEventListener('click', event => {
+       play()
        playerChoice = event.target.value 
        computerChoice = generateComputerChoice()
+       
        display()
        
        
@@ -261,6 +270,17 @@ playAgainBtn.addEventListener("click", function(){
 
     
 })
+
+
+
+function play() {
+        const audio = new Audio("audios/button-124476.mp3")
+        audio.play();
+        
+        
+      }
+
+
       </script>
    </body>
    
