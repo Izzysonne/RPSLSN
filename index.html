@@ -64,7 +64,8 @@ const html = document.getElementById("html");
 const rulesDisplay = document.getElementById('rules-display')
 const initialBackground = html.style.background;
 const screenSize = window.matchMedia("(min-width: 1024px)")
-
+const playAgainBtn = document.getElementById("play-again-btn")
+const playAgain = document.getElementById("play-again")
 
 
 // to get rules buttton to display rules for screen sizes
@@ -128,13 +129,17 @@ function determineWinnner(playerChoice, computerChoice){
 
 
 // updating score
-
 let playerScorePoint = 0
-const playAgainBtn = document.getElementById("play-again-btn")
-const playAgain = document.getElementById("play-again")
+
+let fromLocalStorage = JSON.parse(localStorage.getItem("Score")) 
+
+
+playerScore.textContent =  fromLocalStorage 
+
+playerScorePoint = fromLocalStorage
 
 function updateScoreBoard(){
-    playerScore.textContent = playerScorePoint    
+    localStorage.setItem("Score", JSON.stringify(playerScorePoint))
     if(result==="WIN"){
         playerScorePoint ++
         playerScore.textContent = playerScorePoint
@@ -154,6 +159,7 @@ function updateScoreBoard(){
            document.getElementById("win-or-lose").textContent = "TIE"
            } 
     playAgainBtn.style.display = "block"
+
 }
 
 
