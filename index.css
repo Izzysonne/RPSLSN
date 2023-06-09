@@ -8,8 +8,6 @@ body {
   margin: 0;
   padding: 30px 0; 
   user-select: none;
-            position: relative;
-
 }
 .container{
     width: 80%;
