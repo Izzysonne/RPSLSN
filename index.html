@@ -16,8 +16,48 @@
       type="text/css"
     />
     <link rel="stylesheet" href="index.css" />
-    <script>
-      const rulesBtn = document.getElementById("rules-btn")
+  </head>
+
+  <body id="body">
+      <main id="main">
+        <header class="container">
+            <img class="logo" src="images/logo-bonus.svg" alt="Rock,Paper,Scissors,Lizard,Spock">
+            <div class="score-display">
+                <p>SCORE</p>
+                <h1 id="player-score">0</h1>
+            </div>
+        </header>
+        <div class="choices-container game" id="btn-display"></div>
+        <div class="game choices-container" id="choices-container">
+            <img src="images/bg-pentagon.svg" class="pentagon">
+            <button class="scissors-btn background-img" id="scissors-btn" value="scissors"></button>
+            <button class="spock-btn background-img" id="spock-btn" value="spock"></button>
+            <button class="paper-btn background-img" id="paper-btn" value="paper"></button>
+            <button class="rock-btn background-img" id="rock-btn" value="rock"></button>
+            <button class="lizard-btn background-img" id="lizard-btn" value="lizard"></button>
+        </div>
+        <div id="display-container" ></div>
+        <div id="play-again">
+            <h2 id="win-or-lose"></h2>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+        <div class="container"> 
+            <button class="rules-btn" id="rules-btn">RULES</button>
+        </div>
+      </main>
+      <div class='rules-display' id='rules-display'>
+        <h1>RULES</h1>
+        <img 
+            src='images/image-rules-bonus.svg' 
+            alt='diagram showing rules of game'
+            class='rules-diagram'>
+        <img 
+            src='images/icon-close.svg'
+            alt='close cross button'
+            id='close-btn'>
+      </div>
+      <script>
+        const rulesBtn = document.getElementById("rules-btn")
 const htmlBody = document.getElementById("body");
 const mainEl = document.getElementById("main")
 const html = document.getElementById("html");
@@ -221,47 +261,7 @@ playAgainBtn.addEventListener("click", function(){
 
     
 })
-    </script>
-  </head>
-
-  <body id="body">
-      <main id="main">
-        <header class="container">
-            <img class="logo" src="images/logo-bonus.svg" alt="Rock,Paper,Scissors,Lizard,Spock">
-            <div class="score-display">
-                <p>SCORE</p>
-                <h1 id="player-score">0</h1>
-            </div>
-        </header>
-        <div class="choices-container game" id="btn-display"></div>
-        <div class="game choices-container" id="choices-container">
-            <img src="images/bg-pentagon.svg" class="pentagon">
-            <button class="scissors-btn background-img" id="scissors-btn" value="scissors"></button>
-            <button class="spock-btn background-img" id="spock-btn" value="spock"></button>
-            <button class="paper-btn background-img" id="paper-btn" value="paper"></button>
-            <button class="rock-btn background-img" id="rock-btn" value="rock"></button>
-            <button class="lizard-btn background-img" id="lizard-btn" value="lizard"></button>
-        </div>
-        <div id="display-container" ></div>
-        <div id="play-again">
-            <h2 id="win-or-lose"></h2>
-            <button id="play-again-btn">Play Again</button>
-        </div>
-        <div class="container"> 
-            <button class="rules-btn" id="rules-btn">RULES</button>
-        </div>
-      </main>
-      <div class='rules-display' id='rules-display'>
-        <h1>RULES</h1>
-        <img 
-            src='images/image-rules-bonus.svg' 
-            alt='diagram showing rules of game'
-            class='rules-diagram'>
-        <img 
-            src='images/icon-close.svg'
-            alt='close cross button'
-            id='close-btn'>
-      </div>
+      </script>
    </body>
    
 </html>
