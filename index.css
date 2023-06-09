@@ -4,7 +4,7 @@ html{
   
   body {
     margin: 0;
-    padding: 30px;
+    padding: 30px 30px 90px 30px;
     background-image: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
     font-family: 'Barlow Semi Condensed';
     user-select: none;
