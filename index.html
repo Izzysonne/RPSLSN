@@ -133,12 +133,11 @@ let playerScorePoint = 0
 
 let fromLocalStorage = JSON.parse(localStorage.getItem("Score")) 
 
-playerScore.textContent =  "0"
+playerScore.textContent =  fromLocalStorage 
 
 playerScorePoint = fromLocalStorage
 
 function updateScoreBoard(){
-  playerScore.textContent =  fromLocalStorage 
     if(result==="WIN"){
         playerScorePoint ++
         playerScore.textContent = playerScorePoint
