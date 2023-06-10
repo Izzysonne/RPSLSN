@@ -99,7 +99,7 @@ let playerScore = document.getElementById("player-score")
 const btns = document.querySelectorAll('.background-img')
 let playerChoice = ""
 let computerChoice = generateComputerChoice()
-
+choicesContainer.style.marginTop = "83px"
 let playerScorePoint = 0
 
 let fromLocalStorage = JSON.parse(localStorage.getItem("Score")) 
@@ -266,7 +266,7 @@ function resetGame(){
                 playAgainBtn.style.display = "none"
             }
             rulesBtn.style.marginTop = "150px"
-            choicesContainer.style.marginTop = "86px"
+            
 }
 
 playAgainBtn.addEventListener("click", function(){
