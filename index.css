@@ -39,6 +39,9 @@ html{
       justify-content: center;
       
   }
+  .script{
+    display: none;
+  }
   
   .logo{
       width: 59px;
