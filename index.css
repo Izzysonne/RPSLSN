@@ -239,7 +239,7 @@ html{
       
   }
   #play-again button{
-      display: none;
+      display: flex;
       width: 220px;
       height: 48px;
       font-size: 16px;
