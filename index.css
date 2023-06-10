@@ -62,9 +62,9 @@ html{
       font-size: 2.5rem;
       margin: 0;
   }
- 
+  
   .game{
-    margin-top: 5.75em;
+      margin-top: 5.3em;
       display: flex;
       flex-direction: column;
       align-items: center;
