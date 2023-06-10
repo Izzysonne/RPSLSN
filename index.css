@@ -221,7 +221,7 @@ html{
       margin-left: -150px;
   }
   #play-again{
-      display: none;
+      display: flex;
       /* margin: 50em auto 0 auto; */
       background: inherit;
       display: flex;
@@ -239,7 +239,7 @@ html{
       
   }
   #play-again button{
-      display: flex;
+      display:  none;
       width: 220px;
       height: 48px;
       font-size: 16px;
