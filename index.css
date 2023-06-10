@@ -63,7 +63,7 @@ html{
   }
   
   .game{
-      margin: 5.19em auto;
+      margin-top: 5.3em;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -226,7 +226,7 @@ html{
       align-items: center;
       justify-content: center;
       border: none;
-      margin: 3.875em auto 3.25em auto;
+      margin: 3.875em auto 3em auto;
   }
   
   h2{
