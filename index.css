@@ -63,8 +63,12 @@ html{
       margin: 0;
   }
   
+#choices-container{
+    margin-top: 5.75em;
+
+}
+
   .game{
-      margin-top: 5.3em;
       display: flex;
       flex-direction: column;
       align-items: center;
