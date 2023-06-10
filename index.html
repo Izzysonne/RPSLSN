@@ -106,15 +106,7 @@ function determineWinnner(playerChoice, computerChoice){
 
 
 
-btns.forEach(btn => {
-   btn.addEventListener('click', event => {
-       play()
-       playerChoice = event.target.value 
-       computerChoice = generateComputerChoice()
-       display()    
-   })
 
-})
 
 // updating score
 function updateScoreBoard(){
@@ -203,6 +195,16 @@ if (screenSize.matches) { // If media query matches
     },3000)
         } 
     }
+
+    btns.forEach(btn => {
+   btn.addEventListener('click', event => {
+       play()
+       playerChoice = event.target.value 
+       computerChoice = generateComputerChoice()
+       display()    
+   })
+
+})
 
 function resetGame(){
       choicesContainer.style.display = "flex"
