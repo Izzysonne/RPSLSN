@@ -1,6 +1,5 @@
 html{
-    background-image: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
-    padding: 0;
+    background-image: #131537;
   }
   
   body {
@@ -8,7 +7,6 @@ html{
     background-image: inherit;
     font-family: 'Barlow Semi Condensed';
     user-select: none;
-    height: 100%;
   }
   
   
