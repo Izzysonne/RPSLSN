@@ -70,9 +70,6 @@ html{
       align-items: center;
       position: relative;  
   }
-  #computer-choice{
-      display: none;
-  }
   
   .game button{
       width: 96px;
@@ -232,9 +229,10 @@ html{
   h2{
       color: white;
       font-size: 3.5rem;
-      margin: 0;
+      margin-bottom: 1em;
       
   }
+
   #play-again button{
       display: none;
       width: 220px;
@@ -259,7 +257,6 @@ html{
       display: block;
       margin: 126px auto 56px auto;
       font-family: inherit;
-  
   }
   
   

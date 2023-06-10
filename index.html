@@ -57,7 +57,8 @@
             id='close-btn'>
       </div>
       <script>
-        const rulesBtn = document.getElementById("rules-btn")
+
+const rulesBtn = document.getElementById("rules-btn")
 const htmlBody = document.getElementById("body");
 const mainEl = document.getElementById("main")
 const html = document.getElementById("html");
@@ -99,7 +100,6 @@ let playerScore = document.getElementById("player-score")
 const btns = document.querySelectorAll('.background-img')
 let playerChoice = ""
 let computerChoice = generateComputerChoice()
-choicesContainer.style.marginTop = "83px"
 let playerScorePoint = 0
 
 let fromLocalStorage = JSON.parse(localStorage.getItem("Score")) 
